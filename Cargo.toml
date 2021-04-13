@@ -1,0 +1,16 @@
+[package]
+name = "rust_macro_experiments"
+version = "0.0.0"
+authors = ["Eric Lang <Eric@mail.rit.edu>"]
+description = "Just some experiments where I try and make macros do things."
+keywords = ["template", "proc_macro", "procmacro"]
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
+proc-macro2 = "1.0"
+syn = "1.0"
+
