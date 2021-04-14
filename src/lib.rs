@@ -14,7 +14,7 @@ use quote::quote;
 pub fn quote_free_printer(input: TokenStream) -> TokenStream {
     let source = input.to_string();
     let result = quote! {
-        println!(#source.to_string());
+        println!(#source);
     };
     result.into()
 }
